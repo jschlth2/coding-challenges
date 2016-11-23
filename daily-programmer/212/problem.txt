@@ -1,0 +1,7 @@
+https://www.reddit.com/r/dailyprogrammer/comments/341c03/20150427_challenge_212_easy_rövarspråket/
+
+When we Swedes are young, we are taught a SUPER-SECRET language that only kids know, so we can hide secrets from our confused parents. This language is known as "Rövarspråket" (which means "Robber's language", more or less), and is surprisingly easy to become fluent in, at least when you're a kid. Recently, the cheeky residents of /r/Sweden[1] decided to play a trick on the rest on reddit, and get a thread entirely in Rövarspråket to /r/all[2] . The results were hilarious[3] .
+
+Rövarspråket is not very complicated: you take an ordinary word and replace the consonants with the consonant doubled and with an "o" in between. So the consonant "b" is replaced by "bob", "r" is replaced with "ror", "s" is replaced with "sos", and so on. Vowels are left intact. It's made for Swedish, but it works just as well in English.
+
+Your task today is to write a program that can encode a string of text into Rövarspråket.
