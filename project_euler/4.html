@@ -1,0 +1,32 @@
+<!DOCTYPE html PUBLIC>
+<HTML>
+<BODY>
+<SCRIPT>
+(function() {
+
+var isPalindrome = function(str) {
+	for(var c = 0 ; c < str.length ; c++) {
+		if(str.charAt(c) !== str.charAt(str.length-1-c)) return false;
+	}
+	return true;
+}
+
+var largest = -1;
+
+for(var f = 100 ; f < 1000 ; f++) {
+	for(var s = 100 ; s < 1000 ; s++) {
+		if(isPalindrome( (f*s).toString() )){
+			if(f*s > largest) {
+				largest = f*s;
+			}	
+		}		
+	}
+}
+
+document.write(largest);
+console.log(largest);
+
+})();
+</SCRIPT>
+</BODY>
+</HTML>
