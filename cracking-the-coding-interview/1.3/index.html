@@ -1,0 +1,26 @@
+<html>
+<body>
+<script>
+
+	// string prototype
+	String.prototype.URLify = function() {
+		var array = this.split(' ');
+		var ret_val = '';
+		for(var word in array) {
+			ret_val += array[word];
+			if(word !== array.length-1) ret_val += "%20";
+		}
+		return ret_val;
+	}
+
+	// initial string
+	var url = "Joshua Schultheiss: Computer Engineer";
+	document.write(url + "<br>");
+
+	// URLified string
+	url = url.URLify();
+	document.write(url);
+
+</script>
+</body>
+</html>
