@@ -1,0 +1,44 @@
+<html>
+<body>
+<script>
+
+	var Queue = function(size) {
+
+		// init queue
+		this.queue = new Array(size);			/* some bug with array size, probably a javascript thing */
+
+		// private variables
+		var size = size;
+		var head = 0;
+		var tail = 0;
+		var elements = 0;
+
+		// add method
+		this.add = function(thing) {
+
+			if(elements === size - 1) return "error: out of memory";
+			this.queue[tail] = thing;
+			tail = tail === size - 1 ? 0 : tail + 1;
+			elements++;
+
+		};
+
+		// remove method
+		this.remove = function(thing) {
+
+
+			if(elements === 0) return "error: queue is empty";
+			var ret_val = this.queue[head];
+			this.queue[head] = undefined;
+			head = head === size - 1 ? 0 : head + 1;
+			elements--;
+			return ret_val;
+
+		}
+
+	}
+
+
+</script>
+</body>
+</html>
