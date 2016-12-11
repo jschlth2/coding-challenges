@@ -12,7 +12,9 @@ void URLify(char* url, int len) {
 	int scan_idx = (len-1) - (spaces*2);
 	int print = len-1;
 	for(idx = scan_idx ; idx >=0 ; --idx) {
-		if(url[idx] == ' ') {
+		if(print == idx) { 
+			break;
+		} else if(url[idx] == ' ') {
 			url[print] = '0';
 			url[print-1] = '2';
 			url[print-2] = '%';
